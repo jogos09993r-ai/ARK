@@ -1,0 +1,112 @@
+
+
+/* Configurações Gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0f1214;
+    color: #cfd8dc;
+    font-family: 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Header com Efeito */
+.main-header {
+    height: 400px;
+    background: url('https://wallpaperaccess.com/full/199042.jpg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 2rem;
+    border-radius: 10px;
+    border: 1px solid #00e5ff;
+}
+
+.overlay h1 {
+    font-size: 3.5rem;
+    color: #fff;
+    text-shadow: 0 0 15px #00e5ff;
+}
+
+/* Menu de Navegação */
+.navbar {
+    background-color: #1a1f24;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    border-bottom: 2px solid #00e5ff;
+    z-index: 100;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.navbar a {
+    color: #00e5ff;
+    text-decoration: none;
+    padding: 0 20px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: #fff;
+    text-shadow: 0 0 5px #00e5ff;
+}
+
+/* Layout do Conteúdo */
+.container {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.card {
+    background: #1a1f24;
+    padding: 30px;
+    margin-bottom: 25px;
+    border-radius: 5px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+h2 {
+    color: #00e5ff;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.feature {
+    background: #252d35;
+    padding: 15px;
+    border-left: 4px solid #00e5ff;
+}
+
+.step-list li {
+    margin-bottom: 15px;
+    padding-left: 10px;
+}
+
+/* Rodapé */
+.main-footer {
+    text-align: center;
+    padding: 40px;
+    background: #0a0c0e;
+    color: #546e7a;
+}
