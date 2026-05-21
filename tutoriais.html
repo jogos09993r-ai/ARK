@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARK: Survival - Galeria de Tutoriais</title>
+    <style>
+        /* Reset e Variáveis de Cores */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --accent-color: #0ea5e9; /* Azul tecnológico estilo ARK */
+            --text-color: #f8fafc;
+            --text-muted: #94a3b8;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        /* Cabeçalho */
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 20px 0;
+            border-bottom: 2px solid var(--card-bg);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            color: var(--text-color);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        header h1 span {
+            color: var(--accent-color);
+        }
+
+        header p {
+            color: var(--text-muted);
+            margin-top: 10px;
+        }
+
+        /* Container da Galeria */
+        .gallery-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            padding: 10px;
+        }
+
+        /* Card de Vídeo */
+        .video-card {
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .video-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(14, 165, 233, 0.2);
+        }
+
+        /* Container Responsivo para o Vídeo (Proporção 16:9) */
+        .video-responsive {
+            overflow: hidden;
+            padding-bottom: 56.25%;
+            position: relative;
+            height: 0;
+            background: #000;
+        }
+
+        .video-responsive iframe {
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            border: 0;
+        }
+
+        /* Informações do Card */
+        .video-info {
+            padding: 20px;
+        }
+
+        .video-tag {
+            display: inline-block;
+            background-color: rgba(14, 165, 233, 0.15);
+            color: var(--accent-color);
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+
+        .video-title {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            color: var(--text-color);
+        }
+
+        .video-description {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+
+        /* Rodapé */
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            padding: 20px;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            border-top: 2px solid var(--card-bg);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>ARK: <span>Tutoriais</span></h1>
+        <p>Domine o mapa, dome criaturas e sobreviva ao ARCO</p>
+    </header>
+
+    <main class="gallery-container">
+
+        <!-- Card 1: Como Começar -->
+        <article class="video-card">
+            <div class="video-responsive">
+                <!-- Substitua o ID final (dQw4w9WgXcQ) pelo ID do vídeo do YouTube que desejar -->
+                <iframe src="MELHORES DINOS para COMEÇAR no ARK - Arktetando (240p, h264, youtube).mp4" title="Tutorial de Início no ARK" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span class="video-tag">Iniciante</span>
+                <h2 class="video-title">Guia de Sobrevivência: O Primeiro Dia</h2>
+                <p class="video-description">Aprenda a coletar os primeiros recursos, construir sua primeira cabana de palha e evitar os predadores iniciais.</p>
+            </div>
+        </article>
+
+        <!-- Card 2: Domando Criaturas -->
+        <article class="video-card">
+            <div class="video-responsive">
+                <iframe src="Ark Survival Evolved - De A a Z - Nível 1,2 ,3 - Tutorial - O Abel Joga (240p, h264, youtube).mp4" title="Como Domar Dinossauros" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span class="video-tag">dinos</span>
+                <h2 class="video-title">Como Domar Seu Primeiro Dinossauro</h2>
+                <p class="video-description">Um passo a passo infalível usando a técnica de nocaute e alimentação para domar Raptors e Parasauros.</p>
+            </div>
+        </article>
+
+        <!-- Card 3: Construção de Base -->
+        <article class="video-card">
+            <div class="video-responsive">
+                <iframe src="10 DICAS QUE TODOS SOBREVIVENTES DEVEM SABER PARA JOGAR ARK Survival Evolved EM 2022! - GabrielKnine (240p, h264, youtube).mp4" title="Construção de Base" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span class="video-tag">Construção</span>
+                <h2 class="video-title">Design de Base Segura para PVP/PVE</h2>
+                <p class="video-description">Dicas de arquitetura para proteger seus recursos e dinossauros contra ataques inimigos e predadores grandes.</p>
+            </div>
+        </article>
+
+        <!-- Card 4: Criação/Breeding -->
+        <article class="video-card">
+            <div class="video-responsive">
+                <iframe src="10 things I WISH I knew before playing Ark Survival Evolved - pterafier (240p, h264, youtube).mp4" title="Guia de Breeding" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span class="video-tag">Avançado</span>
+                <h2 class="video-title">Guia de Mutação e Criação de Criaturas</h2>
+                <p class="video-description">Entenda como funcionam as linhas de sangue, incubação de ovos e como conseguir aquelas mutações de cores e status perfeitas.</p>
+            </div>
+        </article>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Sobrevivente do ARK. Desenvolvido para fins de estudo.</p>
+    </footer>
+
+</body>
+</html>
